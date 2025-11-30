@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welling - Tu Coach Nutricional Inteligente</title>
+    <!-- FIX: URLs corregidas para cargar Tailwind y Font Awesome correctamente -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #0d9488, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAV -->
+    <nav class="bg-white/80 backdrop-blur-md fixed w-full z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-leaf text-teal-600 text-2xl"></i>
+                    <span class="font-bold text-2xl tracking-tight text-gray-900">Welling</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#problema" class="text-gray-600 hover:text-teal-600 transition">El Problema</a>
+                    <a href="#features" class="text-gray-600 hover:text-teal-600 transition">Funcionalidades</a>
+                    <a href="#precios" class="text-gray-600 hover:text-teal-600 transition">Planes</a>
+                </div>
+                <button class="bg-teal-600 text-white px-5 py-2 rounded-full font-medium hover:bg-teal-700 transition shadow-lg shadow-teal-500/30">
+                    Descargar App
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
+                <div class="inline-block bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-semibold mb-6">
+                    🚀 #1 en Salud y Bienestar en Uruguay
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Tu coach nutricional <br>
+                    <span class="gradient-text">Powered by AI</span>
+                </h1>
+                <p class="text-xl text-gray-500 mb-8 leading-relaxed">
+                    Democratizamos el acceso al asesoramiento nutricional. Una app inteligente que crea planes a medida, localizados y accesibles para que tomes decisiones saludables cada día.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="flex items-center justify-center gap-2 bg-black text-white px-8 py-3 rounded-xl hover:bg-gray-800 transition">
+                        <i class="fa-brands fa-apple text-xl"></i> App Store
+                    </button>
+                    <button class="flex items-center justify-center gap-2 bg-black text-white px-8 py-3 rounded-xl hover:bg-gray-800 transition">
+                        <i class="fa-brands fa-google-play text-xl"></i> Google Play
+                    </button>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center relative">
+                <!-- Blob background effect -->
+                <div class="absolute top-0 right-0 w-96 h-96 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+                
+                <!-- Imagen generada: Interfaz Principal -->
+                <img src="http://googleusercontent.com/image_generation_content/0" alt="Interfaz Principal de Welling App" class="relative z-10 w-[300px] md:w-[350px] rounded-[2.5rem] shadow-2xl border-8 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- EL PROBLEMA (Stats) -->
+    <section id="problema" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">La realidad nutricional en Uruguay</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-16">
+                Sabemos que la alimentación es clave, pero existe una brecha enorme entre la intención de mejorar y la capacidad de acceder a un profesional.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-red-100 text-red-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-2">2.400</h3>
+                    <p class="text-gray-600">Nutricionistas egresados en todo el país (MSP/Audyn).</p>
+                </div>
+                <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-2">1.300+</h3>
+                    <p class="text-gray-600">Déficit de profesionales para cubrir una sola consulta per cápita.</p>
+                </div>
+                <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-2">94.5%</h3>
+                    <p class="text-gray-600">Penetración de smartphones. La solución está en tu bolsillo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONAS -->
+    <section class="py-20 bg-teal-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">Diseñado para tu estilo de vida</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Gabriel -->
+                <div class="flex items-start gap-6 bg-teal-800 p-8 rounded-2xl border border-teal-700">
+                    <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">G</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Para el Atleta (Gabriel)</h3>
+                        <p class="text-teal-200 text-sm mb-4">41 años, Arquitecto, Triatleta.</p>
+                        <p class="leading-relaxed opacity-90">
+                            "Busco optimizar mi rendimiento y tiempos. Necesito saber qué comer antes y después de entrenar sin complicaciones."
+                        </p>
+                    </div>
+                </div>
+                <!-- Sofia -->
+                <div class="flex items-start gap-6 bg-teal-800 p-8 rounded-2xl border border-teal-700">
+                    <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">S</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Para el Bienestar Diario (Sofía)</h3>
+                        <p class="text-teal-200 text-sm mb-4">32 años, Profesora, Camina por la rambla.</p>
+                        <p class="leading-relaxed opacity-90">
+                            "Quiero mejorar mi salud sin obsesionarme. Busco reducir la carga mental de decidir qué cocinar cada día."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
+            
+            <!-- Feature 1: Plan Semanal -->
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2 relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-teal-200 to-transparent opacity-20 rounded-full blur-3xl transform -translate-x-10"></div>
+                    <!-- Imagen generada: Plan Semanal -->
+                    <img src="http://googleusercontent.com/image_generation_content/5" alt="Plan Nutricional Semanal" class="relative rounded-3xl shadow-2xl w-[320px] mx-auto border-4 border-gray-100">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-regular fa-calendar-check text-xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 text-gray-900">Planes semanales automatizados</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Olvídate de pensar "¿qué como hoy?". Welling genera planes detallados basados en tus gustos, calorías objetivo y actividad física. Todo calculado por nuestra IA.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Conteo calórico automático</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Sugerencias de recetas</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Ajustes en tiempo real</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 2: Mapas / Almacenes -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16">
+                <div class="md:w-1/2 relative">
+                    <div class="absolute inset-0 bg-gradient-to-l from-blue-200 to-transparent opacity-20 rounded-full blur-3xl transform translate-x-10"></div>
+                    <!-- Imagen generada: Mapa Montevideo -->
+                    <img src="http://googleusercontent.com/image_generation_content/1" alt="Mapa Almacén Saludable" class="relative rounded-3xl shadow-2xl w-[320px] mx-auto border-4 border-gray-100">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-map-location-dot text-xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 text-gray-900">Encuentra comida real cerca de ti</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        ¿No tienes los ingredientes? Welling geolocaliza almacenes saludables y mercados en tu zona (Montevideo y todo el país) para que comprar sea fácil.
+                    </p>
+                    <p class="text-gray-500 italic">"¿Dónde puedo comprar esto cerca de la Rambla?" - Solo pregúntale a Welling.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3: Progreso -->
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2 relative">
+                    <!-- Imagen generada: Gráfica de Peso -->
+                    <img src="http://googleusercontent.com/image_generation_content/2" alt="Gráfica de Progreso" class="relative rounded-3xl shadow-2xl w-[320px] mx-auto border-4 border-gray-100">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-chart-line text-xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 text-gray-900">Celebra cada victoria</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Visualiza tu progreso con proyecciones claras. Welling te mantiene motivado mostrándote cómo tus hábitos diarios impactan en tu objetivo a largo plazo.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Planes diseñados para ti</h2>
+                <p class="text-gray-400">Elige el nivel de acompañamiento que necesitas.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                
+                <!-- FREEMIUM -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                    <h3 class="text-xl font-bold text-gray-300">Welling Basic</h3>
+                    <div class="my-4 text-4xl font-bold">Gratis</div>
+                    <p class="text-gray-400 text-sm mb-8">Para comenzar tu camino saludable.</p>
+                    <ul class="space-y-4 mb-8 text-sm text-gray-300">
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-teal-500"></i> Registro de comidas básico</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-teal-500"></i> Chat limitado con IA</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-teal-500"></i> Conteo de pasos</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl border border-gray-600 hover:bg-gray-700 transition font-medium">Comenzar Gratis</button>
+                </div>
+
+                <!-- PREMIUM -->
+                <div class="bg-teal-900 rounded-2xl p-8 border border-teal-500 relative transform scale-105 shadow-2xl">
+                    <div class="absolute top-0 right-0 bg-teal-500 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+                    <h3 class="text-xl font-bold text-white">Welling Premium</h3>
+                    <div class="my-4 text-4xl font-bold">$9.99 <span class="text-sm font-normal text-teal-200">/mes</span></div>
+                    <p class="text-teal-100 text-sm mb-8">Todo el poder de la IA sin límites.</p>
+                    <ul class="space-y-4 mb-8 text-sm text-gray-100">
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-teal-400"></i> IA Conversacional Ilimitada</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-teal-400"></i> Planes semanales completos</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-teal-400"></i> Mapas de comida saludable</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-teal-400"></i> Proyecciones de peso</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl bg-teal-500 hover:bg-teal-600 transition font-bold text-white shadow-lg">Suscribirse</button>
+                </div>
+
+                <!-- GOLD (Real Nutritionist) -->
+                <div class="bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl p-8 border border-yellow-600/50 relative">
+                    <h3 class="text-xl font-bold text-yellow-500 flex items-center gap-2">
+                        <i class="fa-solid fa-crown"></i> Welling Gold
+                    </h3>
+                    <div class="my-4 text-4xl font-bold">$49.99 <span class="text-sm font-normal text-gray-400">/mes</span></div>
+                    <p class="text-gray-400 text-sm mb-8">Tecnología + Experto Humano.</p>
+                    
+                    <!-- Imagen de la llamada generada anteriormente -->
+                    <div class="mb-6 rounded-lg overflow-hidden border border-gray-700 h-32 relative group">
+                        <img src="http://googleusercontent.com/image_generation_content/4" alt="Consulta Nutricionista" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="bg-black/50 px-2 py-1 rounded text-xs text-white">Incluye Videollamadas</span>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-4 mb-8 text-sm text-gray-300">
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-500"></i> Todo lo incluido en Premium</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-500"></i> <strong>Nutricionista Real Asignado</strong></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-500"></i> Soporte clínico Hospital Británico</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-500"></i> Auditoría mensual de plan</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl bg-yellow-600 hover:bg-yellow-700 text-white transition font-bold">Obtener Gold</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-teal-600 text-xl"></i>
+                <span class="font-bold text-xl text-gray-900">Welling</span>
+            </div>
+            <div class="text-gray-500 text-sm text-center md:text-right">
+                <p>&copy; 2024 Welling App. Todos los derechos reservados.</p>
+                <p class="mt-2">Hecho con ❤️ en Montevideo, Uruguay.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
